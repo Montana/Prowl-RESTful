@@ -1,7 +1,5 @@
 # Prowl-RESTful
 
-# RESTfulAPI_DefaultQueryHandler
-
 This component handles database queries, utilize the deserializer to figure out models and column names and returns the data to the RESTfulAPI.
 
 Config | Type | Info | Default
