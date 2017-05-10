@@ -1,6 +1,6 @@
 # Prowl-RESTful
 
-This component handles database queries, utilize the deserializer to figure out models and column names and returns the data to the RESTfulAPI.
+This component handles database queries, utilize the deserializer to figure out models and column names and returns the data to the RESTful API for Prowl. In this particular case we are using SilverStripe. 
 
 Config | Type | Info | Default
 --- | :---: | --- | ---
