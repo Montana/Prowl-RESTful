@@ -35,3 +35,20 @@ Signature | Parameter type | Info
 `onAfterSerialize(&$data)` | `array` | Called after the model has been serialized. This is the complete dataset that will be converted to JSON and sent to the client. You can use `unset` and/or add fields to the data, just like with a regular array.
 `onBeforeDeserialize(&$data)` | `string` | Called before the raw JSON is being parsed. You get access to the raw JSON data sent by the client.
 `onAfterDeserialize(&$data)` | `array` | Called after JSON has been deserialized into an array map. You can modify this array to prevent incoming values to be applied to your model (sanitize incoming data).
+
+Stash uses paging to conserve server resources and limit response size for resources that return potentially large collections of items. A request to a paged API will result in a values array wrapped in a JSON object with some paging metadata, like this:
+
+    {
+        "size": 3,
+        "limit": 3,
+        "isLastPage": false,
+        "values": [
+            { /* result 0 */ },
+            { /* result 1 */ },
+            { /* result 2 */ }
+        ],
+        "start": 0,
+        "filter": null,
+        "nextPageStart": 3
+        "ProwlClient": 4
+    }
