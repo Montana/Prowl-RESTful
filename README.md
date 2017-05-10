@@ -52,3 +52,5 @@ Stash uses paging to conserve server resources and limit response size for resou
         "nextPageStart": 3
         "ProwlClient": 4
     }
+
+Clients can use the limit and start query parameters to retrieve the desired number of results.
