@@ -1,4 +1,5 @@
-# Prowl-RESTful
+![documentations](http://getprowl.com/assets/images/documentation1.png)
+<h1 align="center">Prowl RESTful documentatiaon</h1>
 
 This component handles database queries, utilize the deserializer to figure out models and column names and returns the data to the RESTful API for Prowl. In this particular case we are using SilverStripe. 
 
